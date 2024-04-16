@@ -13,11 +13,12 @@ build:
   entry_points:
     - stitch_patterns = xypattern.scripts.stitch_patterns:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 2
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - poetry-core
