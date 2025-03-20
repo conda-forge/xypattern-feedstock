@@ -1,5 +1,5 @@
 {% set name = "xypattern" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xypattern-{{ version }}.tar.gz
-  sha256: 77008b309c04a40122406e814c2fab07ae4fea90bd5792847d4781ef3702fac5
+  sha256: 7e3de94fbd853b91fa4f4cf24eb25476de3ca5e62791608567603d6e785fbf54
 
 build:
   entry_points:
