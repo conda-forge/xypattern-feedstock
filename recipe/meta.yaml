@@ -6,14 +6,14 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xypattern-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/xypattern-{{ version }}.tar.gz
   sha256: 33d623be7ec0b4b86d1cd9f4cabfdc6f99f2b16e6e3ef28690aaf3d929c93493
 
 build:
   entry_points:
     - stitch_patterns = xypattern.scripts.stitch_patterns:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   build:
